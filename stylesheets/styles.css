@@ -332,6 +332,8 @@ footer {
   display: block;
   width: auto;
   overflow: hidden;
+  border-top: solid;
+  border-top-width: thin;
 }
 
 .PageNavigation a {
