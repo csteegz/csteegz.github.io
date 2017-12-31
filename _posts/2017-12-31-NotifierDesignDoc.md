@@ -4,7 +4,6 @@ title: Solving the Category Notification Problem
 date: 2017-12-31
 ---
 
-# Category Notifier Facebook Bot [Draft]
 This is a draft and will likely get updated constantly.
 
 ## Background/Research
