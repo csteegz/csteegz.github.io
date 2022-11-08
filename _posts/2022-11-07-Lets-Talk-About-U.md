@@ -43,8 +43,7 @@ For completeness sake, I'll add a quick code sample now, to justify to myself th
 <details>
 <summary>Code Sample</summary>
 
-```golang
-
+~~~golang
 func main() {
 	start := time.Now()
 	time_lapsed := make(chan time.Duration, req_count)
@@ -82,8 +81,8 @@ func main() {
 		(elapsed.Nanoseconds()/int64(count))/1000000)
 	fmt.Printf("took a total of %s", time.Since(start).String())
 	}
+~~~
 
-```
 </details>
 
 The third party service they were using had a rate limit and I, of course, respected it, voting only 10 times per second (per thread [oops]).
