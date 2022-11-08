@@ -24,7 +24,7 @@ I used all the serious web penenetration testing reverse engineering skills, lea
 
 With that, I realized I should use the other thing I'd learned from the consultants - covering your ass - and got permission before making my attempt at dominating the competition:
 
-![FUCK CPAA](../assets/snip.png)
+![FUCK CPAA]({{site.url}}/assets/snip.png)
 
 So, code in hand, I wrote a python script (now lost to time) and took my free Azure credits and ran several instances of it on a VM for 20 somthing days.
 Despite my effort, I came in second to the UCF contestent.
@@ -39,7 +39,7 @@ It was time to rewrite my previous attemps and get Maryland to number 1!
 I'm going to add a quick code sample now, to justify to myself that this is a tech blog and not just story time. 
 Warning, 4 year old Go written by professional not-golang developer.
 
-```
+```go
 
 func main() {
 	start := time.Now()
