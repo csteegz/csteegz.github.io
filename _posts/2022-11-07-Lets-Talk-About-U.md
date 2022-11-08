@@ -43,7 +43,7 @@ For completeness sake, I'll add a quick code sample now, to justify to myself th
 <details>
 <summary>Code Sample</summary>
 
-~~~golang
+{% highlight golang %}
 func main() {
 	start := time.Now()
 	time_lapsed := make(chan time.Duration, req_count)
@@ -81,7 +81,7 @@ func main() {
 		(elapsed.Nanoseconds()/int64(count))/1000000)
 	fmt.Printf("took a total of %s", time.Since(start).String())
 	}
-~~~
+{% endhighlight %}
 
 </details>
 
