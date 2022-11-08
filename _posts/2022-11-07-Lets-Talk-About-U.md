@@ -85,7 +85,7 @@ func main() {
 
 </details>
 
-The third party service they were using had a rate limit and I, of course, respected it, voting only 10 times per second (per thread [oops]).
+The third party service they were using had a rate limit and I, of course, respected it, voting only 10 times per second (per thread).
 After I finished it near the end of July, I ran my software on my home desktop day and night, racking up votes for my favorite football teams. 
 One by one the rankings came out, confirming that I had in fact properly stuffed the ballot boxes.
 Surely this would be the year!
