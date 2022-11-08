@@ -26,20 +26,24 @@ With that, I realized I should use the other thing I'd learned from the consulta
 
 ![FUCK CPAA]({{site.url}}/assets/snip.png)
 
-So, code in hand, I wrote a python script (now lost to time) and took my free Azure credits and ran several instances of it on a VM for 20 somthing days.
-Despite my effort, I came in second to the UCF contestent.
-An [entertaining article](https://deadspin.com/deadspin-25-dont-be-fooled-maryland-still-sucks-1786684104) was written, and I went off to Seattle for a tour of duty in the Redmond code mines.
+So, code in hand, I wrote a python script (now lost to time, but likely some verion of `while True: requests.post()`), took my free Azure credits and ran several instances of it on a VM for 20 somthing days.
+Eventually, I packed up my life and went off to Seattle for a tour of duty in the Redmond code mines.
+That year I finished second again to the UCF guy and an [entertaining article](https://deadspin.com/deadspin-25-dont-be-fooled-maryland-still-sucks-1786684104) was written.
 
-Unfortunately, I forget what happened in 2017. 
-It looks like I tried, as Maryland showed up again in the rankings at #10 after [embarsassing UT.](https://deadspin.com/the-pieces-are-slowly-coming-together-for-maryland-1807524131)
+In 2017, settled into my new life I took a little less effort. 
+Since no Azure credits were at hand, my script would be run on my personal desktop when I wasn't otherwise occupied. 
+Maryland showed up again in the rankings at #10 after [embarsassing UT.](https://deadspin.com/the-pieces-are-slowly-coming-together-for-maryland-1807524131)
 Interestingly, the author described the coach DJ Durkin as `Not a Dick`. 
 
 In 2018, it turned out they'd decided they didn't want to use their own voting software. 
-It was time to rewrite my previous attemps and get Maryland to number 1!
-I'm going to add a quick code sample now, to justify to myself that this is a tech blog and not just story time. 
-Warning, 4 year old Go written by professional not-golang developer.
+Since my old script wouldn't work, it was time to rewrite my previous attemps and get Maryland to number 1!
+My work team was using Kubernetes for deployments, so I wanted to play around with this cool new systems language, Go.
+For completeness sake, I'll add a quick code sample now, to justify to myself that this is a tech blog and not just story time. 
 
-```go
+<details>
+<summary>Code Sample</summary>
+
+```golang
 
 func main() {
 	start := time.Now()
@@ -80,9 +84,10 @@ func main() {
 	}
 
 ```
+</details>
 
-The third party service they were using had a rate limit, and I of course respected it. 
-I ran my software on my home desktop day and night, racking up votes for my favorite football teams. 
+The third party service they were using had a rate limit and I, of course, respected it, voting only 10 times per second (per thread [oops]).
+After I finished it near the end of July, I ran my software on my home desktop day and night, racking up votes for my favorite football teams. 
 One by one the rankings came out, confirming that I had in fact properly stuffed the ballot boxes.
 Surely this would be the year!
 
@@ -97,7 +102,7 @@ Anyway, that was the last year of the Deadspin 25.
 I don't really know why it didn't return the next year.
 At the time, I arrogantly thought I had killed it, forcing the writer to confront the realities of college football for the sake of a petty, possibly unreciprocated rivalry with an unknown adversary from UCF.
 I was upset I would never get the chance to beat them.
-I still am now, writing this blog 4 years later. 
+I'm still disappointed about that, 4 years later, writing this blog. 
 
 In 2019, Deadspin and some other sites were sold to a private equity firm. 
 A bit after that, the Editor in Chief was fired, and the remainder of the staff resigned in disgust after being told to "stick to sports", even though the esoteric topic selection was what lent the site much of it's charm. 
