@@ -346,3 +346,8 @@ footer {
 .PageNavigation .next {
   text-align: right;
 }
+
+details {
+	padding-bottom: 20px;
+	color: grey;
+}
