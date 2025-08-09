@@ -29,7 +29,7 @@ This is to the point where airlines' entire profit centers come from selling the
 
 # Gym Culture
 
-There's this idea, and (backlash)[https://www.youtube.com/watch?v=8V1JYQa6Hus] of using science, or bro science or whatever to find the "optimal" way to train.
+There's this idea, and [backlash](https://www.youtube.com/watch?v=8V1JYQa6Hus) of using science, or bro science or whatever to find the "optimal" way to train.
 You need to do the "Big 4" lifts because that hits the most muscles or you need to use perfect form with full range of motion, since that's how you avoid getting hurt.
 And hell, it's all a pretty good rule of thumb for beginners, just like you usually want to look for "2-for-1s" in _Magic_.  
 But it's boring as shit, people who are slightly past beginners easily start to major in the minors and the backlash is nearly as boring -- "JUST TRAIN HARDER BRO".
