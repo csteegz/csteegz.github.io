@@ -39,4 +39,4 @@ If I have some free time I'll probably go look at the kernel under NCU and see w
 To me this begs the question, why Triton? 
 If I have to tell the agent the specific approach I want it to write anyway, what benefit are we getting from Triton being a high level language? 
 Shouldn't the LLM just produce CUDA C++ code (or cutlass code or whatever).
-If you're (Tri Dao)[https://x.com/scaling01/status/1970146206203416666] and you've forgotten more about GPU architecture then I've ever learned, maybe it helps you skip some boilerplate, but for most ML engineers I would not suggest vibecoding Triton, and I'd be really skeptical of the people claiming sick improvements from AI written kernels.
+If you're [Tri Dao](https://x.com/scaling01/status/1970146206203416666) and you've forgotten more about GPU architecture then I've ever learned, maybe it helps you skip some boilerplate, but for most ML engineers I would not suggest vibecoding Triton, and I'd be really skeptical of the people claiming sick improvements from AI written kernels.
