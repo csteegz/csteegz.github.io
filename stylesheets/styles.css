@@ -351,3 +351,87 @@ details {
 	padding-bottom: 20px;
 	color: grey;
 }
+
+/* Recipe card — append to the end of stylesheets/styles.css */
+
+.recipe {
+  margin: 30px 0;
+  padding: 20px 20px 0;
+  background: #f8f8f8;            /* same as <pre> */
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.recipe h2 {
+  margin-bottom: 5px;
+}
+
+.recipe .yield {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.recipe h3 {
+  margin: 20px 0 8px;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Ingredients: a two-column table, amount | ingredient */
+.recipe table {
+  margin-bottom: 0;
+}
+
+.recipe td {
+  padding: 6px 10px 6px 0;
+  vertical-align: baseline;
+}
+
+.recipe td:first-child {
+  width: 5.5em;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #222;
+  font-variant-numeric: tabular-nums;
+}
+
+.recipe tr:last-child td {
+  border-bottom: 0;
+}
+
+.recipe td small {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+
+/* The header row stays in the markup for screen readers, hidden visually */
+.recipe thead th {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Directions */
+.recipe ol {
+  padding-left: 1.5em;
+}
+
+.recipe ol li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+@media print {
+  .recipe {
+    background: none;
+    break-inside: avoid;
+  }
+
+  .PageNavigation {
+    display: none;
+  }
+}
