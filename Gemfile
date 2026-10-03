@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Specify Ruby version for Netlify compatibility
-ruby '3.1.0'
+ruby '3.4.8'
 
 # GitHub Pages gem with version constraint for compatibility
 gem 'github-pages', '~> 232', group: :jekyll_plugins
