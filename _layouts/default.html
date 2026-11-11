@@ -1,30 +1,41 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Colin Versteeg | Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Colin Versteeg | Software Engineer</title>
 
     <link rel="stylesheet" href="{{ "/stylesheets/styles.css" | prepend: site.url }}">
     <link rel="stylesheet" href="{{ "/stylesheets/github-light.css" | prepend: site.url }}">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1 class = "name"><a href="{{ site.url }}">Colin Versteeg</a></h1>
-        <h3><a href = "{{ site.url }}/Resume.pdf">Resume</a></h3>
-        <h3><a href = "{{ site.url }}/blog/">Posts</a></h3>
-        
+        <h1 class="name"><a href="{{ site.url }}">Colin Versteeg</a></h1>
+        <h3><a href="{{ site.url }}/Resume.pdf">Resume</a></h3>
+        <h3><a href="{{ site.url }}/blog/">Posts</a></h3>
       </header>
       <section>
-       {{content}}
-        </section>
-       
+        {{ content }}
+      </section>
     </div>
-    
+
+    <script>
+      // Collapse long fenced code blocks into <details> (styled by details.collapsible)
+      document.querySelectorAll('div.highlighter-rouge').forEach(function (block) {
+        var lines = block.textContent.trim().split('\n').length;
+        if (lines < 15) return;   // leave short blocks alone
+        var d = document.createElement('details');
+        d.className = 'collapsible';
+        var s = document.createElement('summary');
+        s.textContent = 'Show code (' + lines + ' lines)';
+        block.parentNode.insertBefore(d, block);
+        d.appendChild(s);
+        d.appendChild(block);
+      });
+    </script>
   </body>
 </html>
